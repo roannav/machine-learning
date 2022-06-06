@@ -1,8 +1,19 @@
 import numpy as np
 
+arr = np.array([[1,2], [3,4], [5,6]])
+print("\n", arr)
+print(f"Number of dimensions is {arr.ndim}.")
+print(f"How many elements in each dimension? {arr.shape}")
+print("np.shape returns (num rows, num columns) for a 2D array.")
+ 
 # choose random values bet 0..9
+print("\nUse np.random.randint(n) to choose " + 
+      "random ints between 0..(n-1)")
 arr = np.random.randint(10, size=(3,2))
 print(arr)
+print(type(arr))
+print("array size (aka total number of elements) " +
+      f"is {arr.size}.\n")
 
 '''
 # Sample output
