@@ -57,3 +57,36 @@ print(arr2)
 # horizontally stack arrays
 arr3 = np.hstack((arr2, arr2))
 print(arr3)
+
+
+print("__________________________________________________________")
+
+arr = np.arange(8)
+print("\n\nnp.arange(8)")
+print(arr)
+print(arr.shape)
+
+print("\n\n2 ways to make a row vector:")
+
+row_vector = arr[ np.newaxis, :]
+print("\nrow_vector = arr[ np.newaxis, :]")
+print(row_vector)
+print(row_vector.shape)
+
+row_vector2 = np.expand_dims(arr, axis=0)
+print("\nrow_vector2 = np.expand_dims(arr, axis=0)")
+print(row_vector2)
+print(row_vector2.shape)
+
+print("\n\n2 ways to make a column vector:")
+
+col_vector = arr[ :, np.newaxis]
+print("\ncol_vector = arr[ :, np.newaxis]")
+print(col_vector)
+print(col_vector.shape)
+
+col_vector2 = np.expand_dims(arr, axis=1)
+print("\ncol_vector2 = np.expand_dims(arr, axis=1)")
+print(col_vector2)
+print(col_vector2.shape)
+
