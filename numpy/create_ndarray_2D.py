@@ -6,6 +6,18 @@ print(f"Number of dimensions is {arr.ndim}.")
 print(f"How many elements in each dimension? {arr.shape}")
 print("np.shape returns (num rows, num columns) for a 2D array.")
  
+arr = np.zeros((3,3))  # NOTE: tuple arg
+print(arr)  # 3 x 3 matrix with zeros
+
+arr = np.ones((3,3))  # NOTE: tuple arg
+print(arr)  # 3 x 3 matrix with ones
+
+# identity matrix
+arr = np.eye(3)
+print(arr)
+
+print("__________________________________________________________")
+
 # choose random values bet 0..9
 print("\nUse np.random.randint(n) to choose " + 
       "random ints between 0..(n-1)")
