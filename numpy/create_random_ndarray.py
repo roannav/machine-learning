@@ -1,8 +1,14 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# initialize the pseudo random generator (MT19937 BitGenerator).
+# This will cause the same stream of random number to be generated every time.
+#np.random.seed(99)
+
 #####################################################################
+#
 # random int
+#
 #####################################################################
 
 # np.random.randint(end)
@@ -32,33 +38,39 @@ print(arr)
 
 
 #####################################################################
-# random float: 0..1
+#
+# random float: [0,1)   uniform distribution
+#
 #####################################################################
 
 # np.random.rand()
-# returns a single float
+# returns a single float with value [0, 1)
 f = np.random.rand()
 print(f)
 
 # np.random.rand( num_samples)
-# returns an array of floats with length num_samples
+# returns an array of floats with length num_samples.
+# Each float has values [0, 1)
 arr = np.random.rand(5)
 print(arr)
 
 # np.random.rand( shape of array of samples)
-# returns a 2D array of floats
-arr = np.random.rand(3,5)
+# returns a 2D array of floats with values [0, 1)
+arr = np.random.rand(3,5)     # 3 rows, 5 columns
 print(arr)
 
 
 #####################################################################
+#
 # random floats sampled from a Gaussian distribution (aka Normal distribution)
-# By default mean=0 and variance=1, so it's a standard normal distribution.
+# By default, mean=0 and variance=1, so it's a standard normal distribution.
 #
 # normal() and randn() use the same normal distribution.
+#
 # However, normal() has parameters to set the mean (aka loc) 
 # and variance (aka scale).
 # numpy.random.normal( loc, scale, size)
+#
 #####################################################################
 
 # np.random.randn( num_samples)
