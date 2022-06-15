@@ -18,6 +18,13 @@ print(arr)
 print("\nsize is the total number of elements in the array")
 print(arr.size)
 
+print("\narray of 2s")
+# empty fills the array with random values
+arr = np.empty(5, dtype=np.int32)
+print(arr)
+arr.fill(2)
+print(arr)
+
 print("\nshape returns a tuple of ints, which tell you how many elements there are in each dimension")
 #print("For 2D, the first number is the the number of rows")
 print(arr.shape)
