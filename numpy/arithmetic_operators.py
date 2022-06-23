@@ -35,7 +35,7 @@ print("\nB\n", B)
 print("\nelementwise product: A * B")
 print(A * B)
 
-print("Instead of elementwise product...")
+print("\n\nInstead of elementwise product...")
 print("\nmatrix product: A @ B")
 print(A @ B)
 
